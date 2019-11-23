@@ -9,12 +9,15 @@
 
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <!--<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/animate.css">
   <link href="css/style.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/w3.css">
+  <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Jim Nightshade' rel='stylesheet'>
   <!-- =======================================================
     Theme Name: Anyar
     Theme URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
@@ -23,6 +26,58 @@
   ======================================================= -->
   <style>
     .mySlides {display:none;}
+	.myIframe {
+     position: relative;
+     padding-bottom: 65.25%;
+     padding-top: 30px;
+     height: 0;
+     overflow: auto; 
+     -webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
+     border: solid black 1px;
+	} 
+	@media (min-width:400px){
+		canvas {
+			margin-left : 3%;
+			margin-top : 3%;
+		}
+		#Timer {
+		    margin-left : 5%;
+			background-image : url('tbg32.jpg');
+			background-repeat : no-repeat;
+		}
+		#countdown{
+			margin-top : 30%;
+		}
+	}
+	@media (min-width:500px){
+		canvas {
+			margin-left : 8%;
+			margin-top : 5%;
+		}
+		#Timer {
+			margin-left : 5%;
+			background-image : url('tbg32.jpg');
+			background-repeat : no-repeat;
+		}
+		#countdown{
+			margin-top : 30%;
+		}
+	}
+	@media (min-width:600px){
+		canvas {
+			margin-left : 25%;
+			margin-top : 3%;
+		}
+		#Timer {
+			margin-left : 5%;
+			background-image : url('tbg32.jpg');
+			background-repeat : no-repeat;
+		}
+		#countdown{
+			margin-top : 10%;
+		}
+	}
+	
   </style>
 </head>
 
@@ -58,80 +113,64 @@
     </nav>
   </header>
   <br/><br/><br/><br/><br/>
-  <div id="Timer">
+  <div id="Timer" style="height:500px;">
     <div class="container">
       <div class="center">
-        <div class="col-md-6 col-md-offset-3">
-        </div>
+  
       </div>
     </div>
     <div id="countdown">
-      <div class="container">
-        <div class="center">
+      <div class="container" style="text-align:center;color:white">
+	    <div class="row">
+		  <div class="col-sm-12">
+			<h1 style="font-family:Cinzel Decorative;font-size:18px;">We're getting married</h1>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12">
+			<h1 style="font-family:Courgette;font-size:30px;">Kamalraj</h1>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12">
+			<h1 style="font-family:Courgette;font-size:30px;">&amp;</h1>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12">
+			<h1 style="font-family:Courgette;font-size:30px;">Tharunya</h1>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12">
+			<h1 style="font-family:Cinzel Decorative;font-size:18px;">December 2, 2019 04:30AM</h1>
+		  </div>
+		</div>
+		<div class="row">
+		  <div class="col-sm-12" id="tt">
+			
+		  </div>
+		</div>
+        <!--<div class="center">
           <iframe src="mtimer.html" width="100%" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
+        </div>-->
+		<!--<div id="tt" style="background-color:black">
+		
+		</div>-->
       </div>
     </div>
   </div>
   <br/><br/>
   <div id="throwback">
     <div class="container">
-	<!--<div class="w3-content w3-section">-->
 		<img class="mySlides" src="img/1.jpg" style="width:100%">
 		<img class="mySlides" src="img/2.jpg" style="width:100%">
 		<img class="mySlides" src="img/3.jpg" style="width:100%">
 		<img class="mySlides" src="img/4.jpg" style="width:100%">
 		<img class="mySlides" src="img/5.jpg" style="width:100%">
 		<img class="mySlides" src="img/6.jpg" style="width:100%">
-	<!--</div>-->
 	</div>
-    <!-- <div class="slider">
-      <div class="">
-        <div id="about-slider">
-          <div id="carousel-slider" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators visible-xs">
-              <li data-target="#carousel-slider" data-slide-to="0" class="active"></li>
-              <li data-target="#carousel-slider" data-slide-to="1"></li>
-              <li data-target="#carousel-slider" data-slide-to="2"></li>
-			  <li data-target="#carousel-slider" data-slide-to="3"></li>
-			  <li data-target="#carousel-slider" data-slide-to="4"></li>
-			  <li data-target="#carousel-slider" data-slide-to="5"></li>
-            </ol>
-
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="img/3.jpg" class="img-responsive" alt="">
-              </div>
-              <div class="item">
-                <img src="img/1.jpg" class="img-responsive" alt="">
-              </div>
-              <div class="item">
-                <img src="img/2.jpg" class="img-responsive" alt="">
-              </div>
-			  <div class="item active">
-                <img src="img/5.jpg" class="img-responsive" alt="">
-              </div>
-              <div class="item">
-                <img src="img/6.jpg" class="img-responsive" alt="">
-              </div>
-              <div class="item">
-                <img src="img/7.jpg" class="img-responsive" alt="">
-              </div>
-            </div>
-
-            <a class="left carousel-control hidden-xs" href="#carousel-slider" data-slide="prev">
-							<i class="fa fa-angle-left"></i>
-						</a>
-
-            <a class=" right carousel-control hidden-xs" href="#carousel-slider" data-slide="next">
-							<i class="fa fa-angle-right"></i>
-						</a>
-          </div>
-         
-        </div>
-        
-      </div>
-    </div> -->
+    
   </div>
 <br/><br/>
   <section id="events">
@@ -140,7 +179,7 @@
         <div class="col-md-6 col-md-offset-3">
           <h2>Events</h2>
           <hr>
-          <p class="lead">A Wedding doesn't have to be <b>Expensive</b> to be <b>Memorable</b>.<br>More Events, More Memories.</p>
+          <p class="lead">A Wedding doesn't have to be <b>Expensive</b> to be <b>Memorable</b>.<br></p>
 		  
         </div>
       </div>
@@ -164,8 +203,22 @@
                 <div id="collapseOne1" class="panel-collapse collapse in">
                   <div class="panel-body">
                     <div class="media accordion-inner">
-                      <div class="pull-left">
-                        <img class="img-responsive" src="img/mall.jpg" width="250" height="250">
+                      <div class="">
+                        <img class="img-responsive pull-left" src="img/mall.jpg" width="250" height="250">
+						<div class="pull-right">
+						  <div class="center">
+							<h1 style="font-size:20px;text-align:center">Kamalraj</h1>
+							<hr/>
+							<h2 style="font-size:16px">Sr. Application Engineer,</h2>
+							<h3 style="font-size:16px">Altair Engineering,</h3>
+							<br/>
+							<h1 style="font-size:20px;text-align:center">Tharunya</h1>
+							<hr/>
+							<h2 style="font-size:16px">Systems Engineer,</h2>
+							<h3 style="font-size:16px">Tata Consultancy Services</h3>
+							<br/>
+						  </div>
+						</div>
                       </div>
                       <div class="media-body">
                         <h4 style="text-align:center"><strong></strong></h4>
@@ -225,6 +278,8 @@
       <div class="center">
         <div class="col-md-6 col-md-offset-3">
           <h2>e-Invitation</h2>
+		  <hr>
+          <p class="lead">You are invited for our wedding.<br>Please download e-Invitation card by clicking on the image.</p>
           <hr>
         </div>
       </div>
@@ -298,21 +353,7 @@
   <script src="js/jquery.isotope.min.js"></script>
   <script src="js/functions.js"></script>
   <script src="contactform/contactform.js"></script>
-  <script src="js/jquery.countdown.min"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countdown/2.1.0/js/jquery.countdown.min.js"></script>
-  <script type="text/javascript">
-	$(document).ready(function(){
-		$('#getting-started').countdown('2019/12/02', function(event) {
-			$(this).html(event.strftime('%w weeks %d days %H:%M:%S'));
-		});
-		var date = '2016/10/01';
-
-		$("#defaultCountdown")
-			.countdown(date, function(event) {
-				$(this).text(event.strftime('%D days %H:%M:%S'));
-			});
-		});
-  </script>
+  <script  src="./script.js"></script>
   <script>
 	var myIndex = 0;
 	carousel();
