@@ -17,11 +17,11 @@ var ringer = {
     'SECONDS': {
       s: 1000,
       max: 60
-    },
+    }/*,
     'MICROSEC': {
       s: 10,
       max: 100
-    }
+    }*/
    },
   r_count: 5,
   r_spacing: 10, // px
@@ -42,10 +42,10 @@ var ringer = {
     
 
 
-    $r.cvs.setAttribute('width',$r.size.w);           
-    $r.cvs.setAttribute('height',$r.size.h);
+    $r.cvs.setAttribute('width',900);           
+    $r.cvs.setAttribute('height',200);
     $r.ctx = $r.cvs.getContext('2d');
-    $(document.body).append($r.cvs);
+    $("#tt").append($r.cvs);
     $r.cvs = $($r.cvs);    
     $r.ctx.textAlign = 'center';
     $r.actual_size = $r.r_size + $r.r_thickness;
