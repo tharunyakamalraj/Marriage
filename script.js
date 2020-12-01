@@ -21,13 +21,13 @@ var ringer = {
     'SECONDS': {
       s: 1000,
       max: 60
-    }/*,
+    },
     'MICROSEC': {
       s: 10,
       max: 100
-    }*/
+    }
    },
-  r_count: 5,
+  r_count: 6,
   r_spacing: 10, // px
   r_size: 100, // px
   r_thickness: 2, // px
