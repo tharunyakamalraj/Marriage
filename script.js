@@ -2,6 +2,10 @@ var ringer = {
   //countdown_to: "10/31/2014",
   countdown_to: "12/02/2019 04:30:00",
   rings: {
+    'YEARS': { 
+       s: 31536000000 ,
+       max: 100
+     }
     'DAYS': { 
       s: 86400000, // mseconds in a day,
       max: 365
@@ -23,7 +27,7 @@ var ringer = {
       max: 100
     }
    },
-  r_count: 5,
+  r_count: 6,
   r_spacing: 10, // px
   r_size: 100, // px
   r_thickness: 2, // px
