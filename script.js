@@ -5,7 +5,7 @@ var ringer = {
     'YEARS': { 
        s: 31536000000 ,
        max: 100
-     }
+     },
     'DAYS': { 
       s: 86400000, // mseconds in a day,
       max: 365
