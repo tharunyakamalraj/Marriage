@@ -3,12 +3,12 @@ var ringer = {
   countdown_to: "12/02/2019 04:30:00",
   rings: {
     'YEARS': { 
-       s: 31536000000 ,
+       s: 31622400000 ,
        max: 100
      },
     'DAYS': { 
       s: 86400000, // mseconds in a day,
-      max: 365
+      max: 366
     },
     'HOURS': {
       s: 3600000, // mseconds per hour,
